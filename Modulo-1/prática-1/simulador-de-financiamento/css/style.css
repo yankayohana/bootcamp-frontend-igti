@@ -1,0 +1,111 @@
+:root {
+    --var-cor-1: #525298;
+    --var-cor-2: #9c9cb3;
+    --var-cor-3: #2E2E64;
+    --var-cor-4: #f1f1f9;
+    --var-cor-5: #ffc048;
+    --var-cor-6: #c7c7ec;
+    --var-cor-7: #22b07d;
+    --var-cor-8: #ff7550;
+}
+
+/** GERAL **/
+
+h1 {
+    font-size: 2rem;
+    padding: 30px 40px;
+    color: var(--var-cor-3);
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+form input {
+    margin: 10px 15px 15px 15px;
+    padding: 8px 10px;
+
+    display: flex;
+    width: 100%;
+    background: transparent;
+
+    border: none;
+    border: 1px var(--var-cor-2) solid;
+
+    outline-color:var(--var-cor-1);
+    color: var(--var-cor-3); 
+}
+
+form label {
+    margin: 0px 15px 0px 15px;
+    color: var(--var-cor-1);
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 900px;
+    margin: 0 auto;
+
+
+}
+
+
+
+.formulario-completo {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: var(--var-cor-4);
+    height: 100vh;
+    
+    
+}
+
+/** SEÇÃO FORMULÁRIO SIMULADOR **/
+
+
+
+
+table, th, td {
+    border: 1px solid var(--var-cor-1);
+    border-collapse: collapse;
+  }
+
+.tabela-prestacoes {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tabela-container {
+    padding: 15px 15px;
+    
+}
+
+#table {
+    width: 100%;
+    text-align: center;
+}
+
+
+th, td {
+    padding: 10px 10px;
+    color: var(--var-cor-3);
+    
+}
+
+th {
+    font-weight: bold;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+

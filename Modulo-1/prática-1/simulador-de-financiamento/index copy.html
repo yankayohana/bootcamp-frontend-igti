@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Financiamento</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <a href=""></a>
+
+    https://ssrweb.zoom.us/cmr/replay/2021/03/12/97013062085/B2E1BACA-0E69-4764-8EB9-FFECBC9A3F69/GMT20210311-215522_Primeira-a_1920x1080.mp4?response-content-type=video%2Fmp4&amp;response-cache-control=max-age%3D0%2Cs-maxage%3D86400&amp;data=f3ee4df87da2c20de08aab4590e0117a004907afcf775e2cdc3d3fadaabfb7b8&amp;s001=yes&amp;cid=aw1&amp;fid=MooR1Cz6dAecPZZQ_gT4ANHB909azjwsCY0-W_JLDwT_9-oIU6lPZy5Ltce6Ewp0j0al6mGZfxoVFrqO.GGqL9-DvC1Nsqxnq&amp;s002=T0x3dfvK_LHkQTc3xWk-gFTf5sZNoz8aSq_8REgFlVwvnn3Q2jCykOCc9g.oajcbWluGSRTtNwb&amp;Policy=eyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6Imh0dHBzOi8vc3Nyd2ViLnpvb20udXMvY21yL3JlcGxheS8yMDIxLzAzLzEyLzk3MDEzMDYyMDg1L0IyRTFCQUNBLTBFNjktNDc2NC04RUI5LUZGRUNCQzlBM0Y2OS9HTVQyMDIxMDMxMS0yMTU1MjJfUHJpbWVpcmEtYV8xOTIweDEwODAubXA0P3Jlc3BvbnNlLWNvbnRlbnQtdHlwZT12aWRlbyUyRm1wNCZyZXNwb25zZS1jYWNoZS1jb250cm9sPW1heC1hZ2UlM0QwJTJDcy1tYXhhZ2UlM0Q4NjQwMCZkYXRhPWYzZWU0ZGY4N2RhMmMyMGRlMDhhYWI0NTkwZTAxMTdhMDA0OTA3YWZjZjc3NWUyY2RjM2QzZmFkYWFiZmI3YjgmczAwMT15ZXMmY2lkPWF3MSZmaWQ9TW9vUjFDejZkQWVjUFpaUV9nVDRBTkhCOTA5YXpqd3NDWTAtV19KTER3VF85LW9JVTZsUFp5NUx0Y2U2RXdwMGowYWw2bUdaZnhvVkZycU8uR0dxTDktRHZDMU5zcXhucSZzMDAyPVQweDNkZnZLX0xIa1FUYzN4V2stZ0ZUZjVzWk5vejhhU3FfOFJFZ0ZsVnd2bm4zUTJqQ3lrT0NjOWcub2FqY2JXbHVHU1JUdE53YiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTYxNTc1MzE2Mn19fV19&amp;Signature=VwGjsWNgYXhnFHeenaZuKt1ge96CroV~PnKqhU1le7ewA3YouCskGaMo0FpT5U3wwmw0yKhukafKbX7h84pjT44PqIqSQ~-KShmP5EnF1Pux5Cr3aMrodHJySUoTLynSStcHiBwH4dRsv82JoBoaIN4bOlXizTUCf-EfrzwbVRQUvRBI-8ne-otTYOqoxdwe~dmfnAabNGu04JDhkF36ONOf3iVmFRaWrcGUBfN-X~0kSg6KfUAHzBo2QxKzTeg7-UHtS2xIEGkC4FDxhaywJsuCv7oKVlpO~eYTaUS-DwrapR~vECM57dr4Lj1R~FKkv9AaMLOdc2j7-qjklqClsg__&amp;Key-Pair-Id=APKAJFHNSLHYCGFYQGIA"
+
+    <body>
+        <div class="formularios-container">
+            <section class="simulacao">
+                <div class="form-simulacao-container">
+                    <h1>Simulação de Financiamento</h1>
+                    <form action="" class="form-simulacao form">
+                        <label for="valor">Valor:</label>
+                        <input type="number" id="valor">
+
+                        <label for="prazo">Prazo (anos):</label>
+                        <input type="number" id="prazo">
+
+                        <label for="juros">Juros ao ano:</label>
+                        <input type="number" id="juros">
+
+                    </form>
+                    <div class="btn-container">
+                        <button type="button" id="btn">Calcular</button>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="respostas">
+                <div class="form-respostas-container">
+                    <h1>Resultado</h1>
+                    <form action="" class="form-simulacao form">
+                        <label for="prazo-resultado">Prazo (meses):</label>
+                        <input type="text" id="prazo-resultado" readonly>
+
+                        <label for="juros-resultado">Juros ao mês:</label>
+                        <input type="text" id="juros-resultado" readonly>
+
+                        <label for="juros-acumulados">Juros acumulados:</label>
+                        <input type="text" id="juros-acumulados" readonly>
+
+                    </form>
+                </div>
+            </section>
+    </div>
+
+    <div class="tabela-container">
+        <table id="table">
+            <tr>
+                <th>Prestações</th>
+                <th>Amortização</th>
+                <th>Juros</th>
+                <th>Total</th>
+            </tr>
+        </table>
+
+    </div>
+    </body>
+    
+</body>
+</html>

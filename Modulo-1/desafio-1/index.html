@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Employees</title>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="title">
+                <h1 class="header-title"><a href="#">Employees</a></h1>
+            </div>
+        </header>
+       <div class="select">
+           <p>Ordenar por</p>
+            <select name="select" id="select">
+                
+                    <option value="ascending" id="salary-ascending" onclick="salaryAscending()">maior salário</option>
+                    <option value="descending" id="salary-descending" class="selected">menor salário</option>
+                    <option value="az" id="namesAZ">nomes de A-Z</option>
+                    <option value="za" id="namesZA">nomes de Z-A</option>
+            </select>
+       </div>
+       <div class="filter-container">
+        <p>Filtrar por cargo:</p>
+           <form action="">
+                <label for=""><input type="checkbox" id="checkDataBaseAdm" value="checkDataBaseAdm">Database administrator</label>
+                <label for=""><input type="checkbox" id="checkSeniorQA" value="checkSeniorQA">Senior QA Analyst</label>
+                <label for=""><input type="checkbox" id="checkJuniorQA" value="checkJuniorQA">Junior QA Analyst</label>
+                <label for=""><input type="checkbox" id="checkSeniorDesigner" value="checkSeniorDesigner">Senior Web Designer</label>
+                <label for=""><input type="checkbox" id="checkJuniorDesigner" value="checkJuniorWeb">Junior Web Designer</label>
+                <label for=""><input type="checkbox" id="checkSeniorWeb" value="checkSeniorWeb">Senior Web Developer</label>
+                <label for=""><input type="checkbox" id="checkJuniorWeb" value="checkJuniorWeb">Junior Web Developer</label><br>
+                <label for=""><input type="checkbox" id="checkDataAnalyst" value="checkDataAnalyst">Data Analyst</label>
+                <label for=""><input type="checkbox" id="checkJuniorDevops" value="checkJuniorDevops">Junior Devops Engineer</label>
+                <label for=""><input type="checkbox" id="checkSeniorDevops" value="checkSeniorDevops">Senior Devops Engineer</label>
+                <label for=""><input type="checkbox" id="checkNetworkAdm" value="checkNetworkAdm">Network administrator</label>
+                <label for=""><input type="checkbox" id="checkProjectManager" value="checkProjectManage">Project Manager</label>
+            </form>
+       </div> 
+
+       <div class="table-container">
+            <table id="table">
+                <thead id="thead">
+                    <tr id="tr">
+                        <td class="titulo-table">Id</td>
+                        <td class="titulo-table">Funcionário</td>
+                        <td class="titulo-table">Cargo</td>
+                        <td class="titulo-table">Salário</td>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+       </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

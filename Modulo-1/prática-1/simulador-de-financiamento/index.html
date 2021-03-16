@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Financiamento</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="formulario-completo">
+        <section class="section-form-silumacao">
+            <h1>Simulação de Financiamento</h1>
+            <div class="form-simulacao form">
+                <form action="">
+                    <label for="valor">Valor:</label>
+                    <input type="number" id="valor">
+
+                    <label for="prazo">Prazo (anos):</label>
+                    <input type="number" id="prazo">
+
+                    <label for="juros">Juros ao ano:</label>
+                    <input type="number" id="juros">
+
+                    <button type="button" id="btn" onclick="calculos()">Calcular</button>
+                </form>
+            </div>
+        </section>
+        <section class="section-resultado-simulacao">
+            <h1>Resultado</h1>
+            <div class="form-resultado form">
+                <form action="">
+                    <label for="prazo-resultado">Prazo (meses):</label>
+                    <input type="text" id="prazo-resultado" readonly>
+
+                    <label for="juros-resultado">Juros ao mês:</label>
+                    <input type="text" id="juros-resultado" readonly>
+
+                    <label for="juros-acumulados">Juros acumulados:</label>
+                    <input type="text" id="juros-acumulados" readonly>
+                </form>
+            </div>
+
+        </section>
+
+        <section class="tabela-prestacoes">
+            <div class="tabela-container">
+                <table id="table">
+                    <tr>
+                        <th>Prestações</th>
+                        <th>Amortização</th>
+                        <th>Juros</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr>
+                       
+                    </tr>
+                    
+
+                </table>
+            </div>
+        </section>
+    
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
